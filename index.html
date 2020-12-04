@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+     <!-- <link rel="stylesheeet" href="style.css"> -->
+    <title>Pimenta tubos e PVC - </title>
+</head>
+<body>
+
+    <!-- div.container -->
+    <div class="container">
+
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
+
+        <header>
+            <div class="img-wrapper">
+                <img src="imagens/header.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Pimenta tubos & PVC <br> Tudo que procura em tubos e PVC</h1>
+                <p>Projeto Integrador</p>
+                <button>Saiba mais</button>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Produtos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Cadastro</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Pedido</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </aside>
+        <section class="secao">
+            <h2>Produtos</h2>
+            <ul class="produtos">
+                <li>
+                    <h2>Tubos</h2>
+                    <img src="imagens/tubos-mini.jpg" alt="">
+                    <p>A PTP oference linhas de tubos completas <br> e com alta qualidade e durabilidade </p>
+                </li>
+                <li>
+                    <h2>Conexões</h2>
+                    <img src="imagens/conexoes.jpg" style="height:200px" alt="">
+                    <p>A PTP paresenta um portifólio completo de produtos <br> que unem design e funcionalidade</p>
+                </li>
+                <li>
+                    <h2>Pvc</h2>
+                    <img src="imagens/pvc.jpg" alt="">
+                    <p>A PTP oferece os melhores produtos para reformas<br> em geral proporcionando qualidade,<br> durabilidae, conforto e segurança</p>
+                </li>
+            </ul>
+        </section>
+        <section class="sessao-cadastro">
+            <div class="cadastro-wrapper"> 
+                <h1>Cadastro</h1>
+                <form action="">
+                    <div class="orientacao">
+                         <label for="nome">Nome</label><input type="text" name="nome" id="nome">
+                        <label for="sobrenome">Sobrenome</label><input type="text" name="sobrenome" id="sobrenome">
+                        <label for="email">E-mail</label><input type="text" name="email" id="email">
+                    </div>
+                    <div class="inserir">
+                        <input type="radio" name="registro" id="cpf"  >CPF
+                        <input type="radio" name="registro" id="cnpj" >CNPJ
+                    </div>
+                    <div class="orientacao">
+                        <input type="text" id="fiscal">
+                    </div>
+                    <div class="inserir">
+                        <input type="radio" name="fone" id="telefone" >Telefone
+                        <input type="radio" name="fone" id="whatsapp" >Whatsapp
+                    </div>
+                    <div class="orinetacao">
+                        <input type="text" id="numero">
+                    </div>
+                    <button type="submit" class="btn-cadastro">Enviar</button>
+                </form>
+             </div>
+        </section>
+        <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form action="envia_email.php" method="post" name="form">
+                        <div class="input-group">
+                            <input name="nome" type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input bame="email "type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea type="text" class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+</html>
