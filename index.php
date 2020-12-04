@@ -17,7 +17,7 @@ if (isset($_POST['BTNenviar'])) {
     
     //Configurações do email, ajustar conforme necessidade
     //==================================================== 
-    $email_destinatario = "alex.silva152@fatec.sp.gov.com"; // pode ser qualquer email que receberá as mensagens
+    $email_destinatario = "pimentatubosepvc"; // pode ser qualquer email que receberá as mensagens
     $email_reply = "$email"; 
     $email_assunto = "Contato formmail"; // Este será o assunto da mensagem
     //====================================================
