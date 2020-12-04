@@ -37,10 +37,10 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Produtos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Cadastro</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Pedido</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#sessao-produtos" class="menu-link">Produtos</a></li>
+                    <li class="menu-item"><a href="#pedido" class="menu-link">Pedido</a></li>
+                    <li class="menu-item"><a href="#cadastro" class="menu-link">Cadastro</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -49,7 +49,7 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </aside>
-        <section class="secao">
+        <section class="sessao" id="sessao-produtos">
             <h2>Produtos</h2>
             <ul class="produtos">
                 <li>
@@ -69,7 +69,21 @@
                 </li>
             </ul>
         </section>
-        <section class="sessao-cadastro">
+        <section class="sessao-pedido">
+            <div class="pedido-wrapper"> 
+                <div>
+                    <h1>Pedido</h1>
+                </div>
+                <h2>Entre em contato com um de nossos representantes</h2>
+                <div class="paragrafo">
+                    <p>Nossos numeros para contato</p>
+                    <p>0800 000 001 capitais e regiões metropolitanas</p> 
+                    <p>55 11 0000 0002 no exterior</p>
+                    <p>0800 999 9999 pessoas com deficiência auditiva e de fala</p> 
+                </div>
+            </div> 
+        </section>
+        <section class="sessao-cadastro" id="cadastro">
             <div class="cadastro-wrapper"> 
                 <h1>Cadastro</h1>
                 <form action="">
@@ -96,12 +110,12 @@
                 </form>
              </div>
         </section>
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Contato</h1>
-                    <form action="envia_email.php" method="post" name="form">
+                    <form method="POST" action="sengrid/processa.php" name="form" >
                         <div class="input-group">
                             <input name="nome" type="text" class="field" id="nome">
                             <label for="nome" class="field-label">Nome</label>
@@ -119,6 +133,21 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy; 2020, Projeto - Integrador</p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 
 </body>

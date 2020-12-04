@@ -235,7 +235,7 @@ header{
 
 
 
-.secao h2{
+.sessao h2{
     margin-top:100px;
     text-align:center;
     font-family: var(--font-primary);
@@ -282,6 +282,64 @@ header{
 
 .produtos li:hover h2{
     font-size:2.5rem;
+}
+
+.sessao-pedido{
+    width:100;
+    height:100vh;
+    background:url("imagens/pedidos.jpg");
+    display: flex;
+    justify-content:left;
+   
+}
+
+.pedido-wrapper{
+    width:60%;
+    height:80%;
+    background:#ffffff99;
+    border-radius:10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.5);
+    position:relative;
+    align-items:center;
+}
+
+.sessao-pedido h1{
+    text-align:center;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-family:var(--font-primary);
+    margin-top:3rem;
+    width:20%;
+    margin-left:22rem;
+    background:#6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff,#6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    border-radius:10px;
+}
+
+.sessao-pedido h2{
+    margin-top:4rem;
+    text-align:center;
+    font-family:var(--font-secundary);
+    margin-bottom:3rem;
+}
+
+.sessao-pedido .paragrafo{
+    text-align:left;
+    position:absolute;
+    width:50%;
+    border:1px solid #FFFFFF;
+    padding: 1rem;
+    justify-content: center;
+    margin-left:13rem;
+    background:#272727;
+    border-radius:10px;
+}
+
+.sessao-pedido p{
+    margin-top:1rem;
+    font-size:1.4rem;
+    color:#FFFFFF;
 }
 
 .sessao-cadastro{
@@ -332,6 +390,11 @@ header{
 .sessao-cadastro .inserir{
     margin:1rem;
 }
+
+
+
+
+
 
 
 
@@ -433,4 +496,53 @@ header{
     border-radius:.5rem;
     border:none;
     box-shadow: 0 .1rem .8rem rgba(0,0,0,0.4);
+}
+
+footer{
+    width:100%;
+    height:7rem;
+    background-color:#17181b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color:#a7a7a7;
+    font-size:1.2rem;
+}
+
+.social-list a{
+    margin:2rem;
+    color:#a7a7a7;
+    font-size: 1.7rem;
+}
+
+.social-list ul{
+    display: flex;
+
+}
+
+#link-topo{
+    position:fixed;
+    right:3rem;
+    bottom:3rem;
+    width:3rem;
+    height:3rem;
+    background:#6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff,#6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    border-radius: .3rem;
+    box-shadow:0 0.1rem 0.6rem #000000;
 }
